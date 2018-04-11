@@ -1,0 +1,110 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.continer {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: repeat(2,1fr);
+}
+
+/* the view of watch */
+.w-view {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.price {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 10%;
+    align-self: center;
+}
+
+.price h4 {
+    color: #9E5B4F;
+    margin-bottom: 2px;
+}
+
+.price h1 {
+    margin-top: 2px;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.price p {
+    font-size: 17px;
+}
+.fature {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center;
+    margin-left: 20%;
+}
+
+.fature h3 {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.fature p { 
+    margin-top: 0;
+}
+
+.pic {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.pic img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* long picture */
+.long-pic {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-image: url(../img/long-pic.jpg);
+    background-size: cover;
+}
+
+/* small picture */
+.small-pic {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(../img/small-pic2.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 7px;
+}
+
+/* watch name */
+.w-name {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+    padding: 20px;
+}
+
+.w-name h4 {
+    color: #9E5B4F;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.w-name h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 1px;
+    font-family: 'Dancing Script', cursive;
+}
